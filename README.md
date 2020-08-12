@@ -1,1 +1,1 @@
-# hackernews-scraper
+# hackerscraper
