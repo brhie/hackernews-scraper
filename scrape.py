@@ -33,5 +33,7 @@ pprint.pprint(create_custom_hn(links, subtext))
 result = create_custom_hn(links, subtext)
 
 with open('news.txt', mode='w') as file:
+    line = 1
     for news in result:
-        file.write(f"{news['title']}({news['link']})\n")
+        file.write(f"{line}. {news['title']}({news['link']})\n")
+        line += 1
